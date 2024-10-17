@@ -21,7 +21,7 @@ public class StateSqlServerDAO2 implements StateDAO{
 	}
 
 	@Override
-	public List<StateEntity> findAllByFilter(StateEntity filter) {
+	public List<StateEntity> findByFilter(StateEntity filter) {
 		// TODO Auto-generated method stub
 		return null;
 	}
