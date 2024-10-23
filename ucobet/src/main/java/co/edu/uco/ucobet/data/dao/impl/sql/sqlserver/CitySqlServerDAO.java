@@ -39,7 +39,7 @@ public final class CitySqlServerDAO extends SqlDAO implements CityDAO{
 	public void create(final CityEntity data) {
 		
 		final StringBuilder statement = new StringBuilder();
-		statement.append("INSERT INTO City(id, name) VALUES (?, ?, ?) ");
+		statement.append("INSERT INTO City(id, name, state) VALUES (?, ?, ?) ");
 		
 		try(final var preparedStatement = getConnection().prepareStatement(statement.toString())){
 			

@@ -81,11 +81,11 @@ public final class CountrySqlServerDAO extends SqlDAO implements CountryDAO{
 	}
 	
 
-	private final void createSelect(final StringBuilder statement) {
+	private void createSelect(final StringBuilder statement) {
 		statement.append("SELECT id, name ");
 	} 
 
-	private final void createFrom(final StringBuilder statement) {
+	private void createFrom(final StringBuilder statement) {
 		statement.append("FROM Country ");
 	} 
 	
@@ -104,7 +104,7 @@ public final class CountrySqlServerDAO extends SqlDAO implements CountryDAO{
 		
 	}
 	
-	private final void createOrderBy(final StringBuilder statement) {
+	private void createOrderBy(final StringBuilder statement) {
 		statement.append("ORDER BY name ASC ");
 	} 
 
