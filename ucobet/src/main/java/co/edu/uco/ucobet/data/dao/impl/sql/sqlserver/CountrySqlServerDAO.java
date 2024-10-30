@@ -1,8 +1,6 @@
 package co.edu.uco.ucobet.data.dao.impl.sql.sqlserver;
 
 import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;

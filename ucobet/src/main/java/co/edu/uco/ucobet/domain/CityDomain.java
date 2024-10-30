@@ -38,7 +38,7 @@ public class CityDomain extends Domain{
 		return super.getId();
 	}
 
-	private StateDomain getState() {
+	public StateDomain getState() {
 		return state;
 	}
 

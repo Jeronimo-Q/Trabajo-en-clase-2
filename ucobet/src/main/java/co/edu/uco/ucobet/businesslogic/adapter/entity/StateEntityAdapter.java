@@ -1,5 +1,7 @@
 package co.edu.uco.ucobet.businesslogic.adapter.entity;
 
+import java.util.List;
+
 import co.edu.uco.ucobet.businesslogic.adapter.Adapter;
 import co.edu.uco.ucobet.entity.StateEntity;
 
@@ -23,6 +25,12 @@ public class StateEntityAdapter implements Adapter<StateEntity, StateEntity>{
 
 	@Override
 	public StateEntity adaptTarget(StateEntity data) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<StateEntity> adaptTarget(List<StateEntity> data) {
 		// TODO Auto-generated method stub
 		return null;
 	}

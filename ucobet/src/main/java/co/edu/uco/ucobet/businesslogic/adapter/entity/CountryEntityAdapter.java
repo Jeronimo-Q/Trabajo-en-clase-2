@@ -1,5 +1,7 @@
 package co.edu.uco.ucobet.businesslogic.adapter.entity;
 
+import java.util.List;
+
 import co.edu.uco.crosscuting.helpers.ObjectHelper;
 import co.edu.uco.crosscuting.helpers.TextHelper;
 import co.edu.uco.crosscuting.helpers.UUIDHelper;
@@ -34,6 +36,12 @@ public class CountryEntityAdapter implements Adapter<CountryDomain, CountryEntit
 		entityAdapted.setName(domainToAdapt.getName());
 		
 		return entityAdapted;
+	}
+
+	@Override
+	public List<CountryEntity> adaptTarget(List<CountryDomain> data) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

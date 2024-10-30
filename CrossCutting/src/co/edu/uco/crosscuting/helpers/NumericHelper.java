@@ -9,6 +9,7 @@ public final class NumericHelper {
 	public static final boolean RANGEINCLUDED = true;
 	public static final boolean RANGENOTINCLUDED = false;
 	
+	
 	public static boolean isNegative(final Number number) {
 		return transformNumberToDouble(number) < 0;
 	}
