@@ -2,7 +2,6 @@ package co.edu.uco.ucobet.entity;
 
 import java.util.UUID;
 
-import co.edu.uco.crosscuting.helpers.TextHelper;
 import co.edu.uco.crosscuting.helpers.UUIDHelper;
 
 public class DomainEntity {

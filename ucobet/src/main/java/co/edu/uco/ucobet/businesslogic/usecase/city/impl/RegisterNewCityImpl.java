@@ -52,16 +52,14 @@ public final class RegisterNewCityImpl implements RegisterNewCity{
 	
 	@Override
 	public void execute(final CityDomain data) {
-		//Validate policies
-	
-		
+
 		cityNameDoesNotExistForState.execute(data, daoFactory);
 		stateExists.execute(data.getState().getId(), daoFactory);
 		cityNameConsistencyIsValid.execute(data.getName());
 		
 		var cityDomainToMap = CityDomain.create(generatedId(), data.getName(), data.getState());
 		var cityEntity = CityEntityAdapter.getCityEntityAdapter().adaptSource(cityDomainToMap);
-		daoFactory.getCityDAO().update(cityEntity);
+		daoFactory.getCityDAO().create(cityEntity);
 		
 	}
 

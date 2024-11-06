@@ -2,12 +2,14 @@ package co.edu.uco.ucobet.businesslogic.adapter;
 
 import java.util.List;
 
-public interface Adapter <D,T>{
+public interface Adapter <T,D>{
 	
-	D adaptSource(T data);
+	T adaptSource(D data);
 	
-	T adaptTarget(D data);
+	D adaptTarget(T data);
 	
-	List<T> adaptTarget(List<D> data);
+	List<T> adaptSource(List<D> data);
+	
+	List<D> adaptTarjet(List<T> data);
 
 }

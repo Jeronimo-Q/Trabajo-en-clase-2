@@ -5,7 +5,6 @@ import java.util.UUID;
 import co.edu.uco.crosscuting.helpers.ObjectHelper;
 import co.edu.uco.crosscuting.helpers.TextHelper;
 import co.edu.uco.crosscuting.helpers.UUIDHelper;
-import co.edu.uco.ucobet.dto.CountryDTO;
 
 public class CityEntity extends DomainEntity{
 	

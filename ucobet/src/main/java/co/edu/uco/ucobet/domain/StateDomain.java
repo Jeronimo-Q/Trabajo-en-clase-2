@@ -37,8 +37,8 @@ public class StateDomain extends Domain{
 	public  UUID getId() {
 		return super.getId();
 	}
-
-	private CountryDomain getCountry() {
+	
+	public CountryDomain getCountry() {
 		return country;
 	}
 

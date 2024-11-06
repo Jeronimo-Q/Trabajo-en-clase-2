@@ -21,9 +21,9 @@ public class FindCityFacadeImpl implements FindCityFacade{
 		try {
 			
 			var findCityUseCase = new FindCityImpl(factory);
-			var cityDomain = CityDTOAdapter.getCityDTOAdapter().adaptSource(data);
+			var cityDomain = CityDTOAdapter.getCityDTOAdapter().adaptTarget(data);
 			
-			return CityDTOAdapter.getCityDTOAdapter().adaptTarget(findCityUseCase.execute(cityDomain));
+			return CityDTOAdapter.getCityDTOAdapter().adaptSource(findCityUseCase.execute(cityDomain));
 			
 		} catch (final UcoBetException exception) {
 			throw exception;

@@ -3,7 +3,6 @@ package co.edu.uco.ucobet.dto;
 import co.edu.uco.crosscuting.helpers.ObjectHelper;
 import co.edu.uco.crosscuting.helpers.TextHelper;
 import co.edu.uco.crosscuting.helpers.UUIDHelper;
-import co.edu.uco.ucobet.entity.CountryEntity;
 
 public class CityDTO extends DomainDTO{
 	

@@ -21,7 +21,7 @@ public class RegisterNewCityFacadeImpl implements RegisterNewCityFacade{
 			factory.initTransaction();
 			
 			var registerNewCityUseCase = new RegisterNewCityImpl(factory);
-			var cityDomain = CityDTOAdapter.getCityDTOAdapter().adaptSource(data);
+			var cityDomain = CityDTOAdapter.getCityDTOAdapter().adaptTarget(data);
 			
 			registerNewCityUseCase.execute(cityDomain);
 			
